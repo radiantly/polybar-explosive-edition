@@ -320,9 +320,9 @@ namespace modules {
 
   int battery_module::clamp_percentage(int percentage, state state) const {
     if (state == battery_module::state::FULL && percentage >= m_fullat) {
-      return 100;
+      return 0;
     }
-    return percentage;
+    return 101 - percentage;
   }
 
   /**

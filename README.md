@@ -1,3 +1,21 @@
+# Polybar: My Battery Is About To Explode Edition
+
+> A fork of polybar that reverses the battery percentage. So, when you're at full charge, it shows 0% and slowly creeps to 100% as you lose charge.
+
+To install, clone and build this repo locally:
+
+```sh
+git clone https://github.com/radiantly/polybar-explosive-edition
+cd polybar-explosive-edition
+git submodule update --init --recursive
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
+sudo cmake --build . --target install
+```
+
+### Original README:
+
 <p align="center">
   <img src="banner.png" alt="Polybar">
 </p>
